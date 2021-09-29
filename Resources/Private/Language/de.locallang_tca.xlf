@@ -3,21 +3,15 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2021-05-05T06:25:54Z" product-name="ce_accordion" target-language="de">
 		<header/>
 		<body>
-			<trans-unit id="tx_ce_accordion.title">
-				<target>Akkordion</target>
+			<trans-unit id="tx_ce_marker.title">
+				<target>Marker</target>
 			</trans-unit>
 			<trans-unit id="tx_ce_accordion.description">
-				<target>Akkordion Modul</target>
+				<target>Marker Modul</target>
 			</trans-unit>
 
 			<trans-unit id="tx_xo_domain_model_elements.record_type.default">
 				<target>Default</target>
-			</trans-unit>
-			<trans-unit id="tx_xo_domain_model_elements.record_type.records">
-				<target>Records</target>
-			</trans-unit>
-			<trans-unit id="tx_xo_domain_model_elements.active">
-				<target>Active</target>
 			</trans-unit>
 		</body>
 	</file>

@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:xo="http://typo3.org/ns/Ps/Xo/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="col-lg-6 marker-image--media">
+		<f:render partial="Components/Media" section="Picture" arguments="{
+			file: media,
+			image: {
+				width: settings.width,
+				cropVariant: settings.cropVariant
+			},
+			sizes: settings.mediaQueries
+		}" />
+	</div>
+</f:section>
+</html>

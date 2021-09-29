@@ -3,22 +3,15 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2021-05-05T06:25:54Z" product-name="ce_accordion">
 		<header/>
 		<body>
-			<trans-unit id="tx_ce_accordion.title">
-				<source>Accordion</source>
+			<trans-unit id="tx_ce_marker.title">
+				<source>Marker</source>
 			</trans-unit>
-			<trans-unit id="tx_ce_accordion.description">
-				<source>Accordion Modul</source>
+			<trans-unit id="tx_ce_marker.description">
+				<source>Marker Modul</source>
 			</trans-unit>
 
 			<trans-unit id="tx_xo_domain_model_elements.record_type.default">
 				<source>Default</source>
-			</trans-unit>
-			<trans-unit id="tx_xo_domain_model_elements.record_type.records">
-				<source>Records</source>
-			</trans-unit>
-
-			<trans-unit id="tx_xo_domain_model_elements.active">
-				<source>Active</source>
 			</trans-unit>
 		</body>
 	</file>

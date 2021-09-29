@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:xo="http://typo3.org/ns/Ps/Xo/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+	<f:section name="Main">
+		<f:spaceless>
+			<f:if condition="{media.0} || {records}">
+				<div class="row marker-image">
+					<f:if condition="{media.0}">
+						<f:render partial="Marker/Media" section="Main" arguments="{
+							media: media.0,
+							settings: settings.modules.marker.media.aside
+						}" />
+					</f:if>
+
+					<f:if condition="{records}">
+						<f:render partial="Marker/Records" section="Main" arguments="{_all}" />
+					</f:if>
+				</div>
+			</f:if>
+		</f:spaceless>
+	</f:section>
+</html>

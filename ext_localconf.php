@@ -20,7 +20,7 @@ call_user_func(
 		$iconRegistry->registerIcon(
 			'ps14-content-marker',
 			\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-			['source' => 'EXT:ce_accordion/Resources/Public/Icons/content-marker.svg']
+			['source' => 'EXT:ce_marker/Resources/Public/Icons/content-marker.svg']
 		);
 	}
 );

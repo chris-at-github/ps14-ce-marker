@@ -18,6 +18,12 @@ tt_content {
 		}
 
 		dataProcessing {
+			20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			20 {
+				as = media
+				references.fieldName = tx_xo_file
+			}
+
 			30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
 			30 {
 				as = records
@@ -31,6 +37,8 @@ tt_content {
 				orderBy = sorting
 			}
 
+			110 = Ps\Xo\DataProcessing\SettingsProcessor
+
 			120 = Ps14\CeAccordion\DataProcessing\ModuleProcessor
 			120 {
 				importCss {
@@ -40,6 +48,40 @@ tt_content {
 #				importJs {
 #					10 = /assets/js/components/collapse.js
 #				}
+			}
+		}
+	}
+}
+
+plugin.tx_xo.settings.modules.marker {
+	media {
+		aside {
+			width = 1000
+			cropVariant = default
+			mediaQueries {
+				992 {
+					width = 555
+					cropVariant = mobile
+					mediaQuery = (min-width: 992px)
+				}
+
+				768 {
+					width = 935
+					cropVariant = mobile
+					mediaQuery = (min-width: 768px)
+				}
+
+				576 {
+					width = 740
+					cropVariant = mobile
+					mediaQuery = (min-width: 576px)
+				}
+
+				0 {
+					width = 545
+					cropVariant = mobile
+					mediaQuery = (min-width: 0px)
+				}
 			}
 		}
 	}
