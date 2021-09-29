@@ -1,0 +1,20 @@
+<div xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:xo="http://typo3.org/ns/Ps/Xo/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:section name="Main">
+		<div id="a--{identifier}-container" class="collapse {f:if(condition: '{record.data.tx_ce_accordion_active}', then: 'show')}" aria-labelledby="a--{identifier}-header">
+			<div class="accordion--container accordion--container-{f:if(condition: '{record.data.record_type} == \'ce_accordion_default\'', then: 'default', else: 'record')}">
+				<f:if condition="{record.data.record_type} == 'ce_accordion_default'">
+					<f:then><f:render section="Default" arguments="{_all}" /></f:then>
+					<f:else><f:render section="Records" arguments="{_all}" /></f:else>
+				</f:if>
+			</div>
+		</div>
+	</f:section>
+
+	<f:section name="Default">
+		<f:format.html>{record.data.description}</f:format.html>
+	</f:section>
+
+	<f:section name="Records">
+		<f:format.raw>{record.content}</f:format.raw>
+	</f:section>
+</div>

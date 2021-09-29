@@ -1,0 +1,46 @@
+tt_content {
+	ce_marker =< lib.contentElement
+	ce_marker {
+		templateName = Marker.html
+		layoutRootPaths {
+			10 = EXT:ce_marker/Resources/Private/Layouts/
+			20 = EXT:xna/Resources/Private/Extensions/CeMarker/Layouts/
+		}
+
+		templateRootPaths {
+			10 = EXT:ce_marker/Resources/Private/Templates/
+			20 = EXT:xna/Resources/Private/Extensions/CeMarker/Templates/
+		}
+
+		partialRootPaths {
+			10 = EXT:ce_marker/Resources/Private/Partials/
+			20 = EXT:xna/Resources/Private/Extensions/CeMarker/Partials/
+		}
+
+		dataProcessing {
+			30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			30 {
+				as = records
+				table = tx_xo_domain_model_elements
+				pidInList.field = pid
+				where {
+					data = field:uid
+					intval = 1
+					wrap = foreign_uid = |
+				}
+				orderBy = sorting
+			}
+
+			120 = Ps14\CeAccordion\DataProcessing\ModuleProcessor
+			120 {
+				importCss {
+					10 = /assets/css/modules/marker.css
+				}
+
+#				importJs {
+#					10 = /assets/js/components/collapse.js
+#				}
+			}
+		}
+	}
+}

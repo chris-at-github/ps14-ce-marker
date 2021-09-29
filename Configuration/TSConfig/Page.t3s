@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+	common {
+		elements {
+			ce_marker {
+				iconIdentifier = ps14-content-marker
+				title = LLL:EXT:ce_accordion/Resources/Private/Language/locallang_tca.xlf:tx_ce_marker.title
+				description = LLL:EXT:ce_accordion/Resources/Private/Language/locallang_tca.xlf:tx_ce_marker.description
+				tt_content_defValues {
+					CType = ce_marker
+				}
+			}
+		}
+
+		show := addToList(ce_marker)
+	}
+}
