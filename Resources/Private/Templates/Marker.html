@@ -9,7 +9,7 @@
 	</f:section>
 
 	<f:section name="Variant-0">
-		<div class="row marker">
+		<div class="row marker marker--layout-{data.tx_xo_variant}">
 			<f:if condition="{media.0}">
 				<div class="col-lg-6">
 					<f:render partial="Marker/Media" section="Main" arguments="{media: media.0, settings: settings.modules.marker.media.aside}" />
@@ -25,7 +25,7 @@
 	</f:section>
 
 <f:section name="Variant-1">
-	<div class="marker">
+	<div class="marker marker--layout-{data.tx_xo_variant}">
 		<f:if condition="{media.0}">
 			<f:render partial="Marker/Media" section="Main" arguments="{media: media.0, settings: settings.modules.marker.media.above}" />
 		</f:if>
