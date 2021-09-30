@@ -61,13 +61,43 @@ plugin.tx_xo.settings.modules.marker {
 			mediaQueries {
 				992 {
 					width = 555
-					cropVariant = mobile
+					cropVariant = desktop
 					mediaQuery = (min-width: 992px)
 				}
 
 				768 {
 					width = 935
 					cropVariant = mobile
+					mediaQuery = (min-width: 768px)
+				}
+
+				576 {
+					width = 740
+					cropVariant = mobile
+					mediaQuery = (min-width: 576px)
+				}
+
+				0 {
+					width = 545
+					cropVariant = mobile
+					mediaQuery = (min-width: 0px)
+				}
+			}
+		}
+
+		above {
+			width = 1140
+			cropVariant = default
+			mediaQueries {
+				992 {
+					width = 1140
+					cropVariant = desktop
+					mediaQuery = (min-width: 992px)
+				}
+
+				768 {
+					width = 935
+					cropVariant = desktop
 					mediaQuery = (min-width: 768px)
 				}
 

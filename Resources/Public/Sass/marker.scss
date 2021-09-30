@@ -9,6 +9,7 @@
 // Variablen
 $ce-marker--use-css: true !default;
 $ce-marker--layout-aside: true !default;
+$ce-marker--layout-above: true !default;
 
 // ---------------------------------------------------------------------------------------------------------------------
 // CSS
@@ -75,15 +76,33 @@ $ce-marker--layout-aside: true !default;
 	}
 
 	// -------------------------------------------------------------------------------------------------------------------
+	// >= 768px
+	@include media-breakpoint-up(md) {
+		@if($ce-marker--layout-above) {
+			.ce-marker.ce-frame--variant-1 {
+				.marker--legend {
+					padding-right: percentage(2 / 12);
+				}
+			}
+		}
+	}
+
+	// -------------------------------------------------------------------------------------------------------------------
 	// >= 992px
 	@include media-breakpoint-up(lg) {
 		@if($ce-marker--layout-aside) {
 			.ce-marker.ce-frame--variant-0 {
 				.marker--legend {
-					& {
-						margin-top: rem(-15px);
-						padding: rem(0 0 0 35px);
-					}
+					margin-top: rem(-15px);
+					padding: rem(0 0 0 35px);
+				}
+			}
+		}
+
+		@if($ce-marker--layout-above) {
+			.ce-marker.ce-frame--variant-1 {
+				.marker--legend {
+					margin-top: rem(45px);
 				}
 			}
 		}

@@ -11,12 +11,28 @@
 	<f:section name="Variant-0">
 		<div class="row marker">
 			<f:if condition="{media.0}">
-				<f:render partial="Marker/Media" section="Main" arguments="{media: media.0, settings: settings.modules.marker.media.aside}" />
+				<div class="col-lg-6">
+					<f:render partial="Marker/Media" section="Main" arguments="{media: media.0, settings: settings.modules.marker.media.aside}" />
+				</div>
 			</f:if>
 
 			<f:if condition="{records}">
-				<f:render partial="Marker/Records" section="Main" arguments="{_all}" />
+				<div class="col-lg-6">
+					<f:render partial="Marker/Records" section="Main" arguments="{_all}" />
+				</div>
 			</f:if>
 		</div>
 	</f:section>
+
+<f:section name="Variant-1">
+	<div class="marker">
+		<f:if condition="{media.0}">
+			<f:render partial="Marker/Media" section="Main" arguments="{media: media.0, settings: settings.modules.marker.media.above}" />
+		</f:if>
+
+		<f:if condition="{records}">
+			<f:render partial="Marker/Records" section="Main" arguments="{_all}" />
+		</f:if>
+	</div>
+</f:section>
 </html>

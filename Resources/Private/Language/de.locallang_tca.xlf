@@ -13,6 +13,10 @@
 			<trans-unit id="tx_xo_domain_model_elements.record_type.default">
 				<target>Default</target>
 			</trans-unit>
+
+			<trans-unit id="tx_ce_marker_tt_content.tx_xo_variant.1">
+				<target>Large Image Above</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

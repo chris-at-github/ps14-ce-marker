@@ -14,3 +14,13 @@ mod.wizards.newContentElement.wizardItems {
 		show := addToList(ce_marker)
 	}
 }
+
+[field('CType') === 'ce_marker']
+	TCEFORM.tt_content {
+		tx_xo_variant {
+			addItems {
+				1 = LLL:EXT:ce_marker/Resources/Private/Language/locallang_tca.xlf:tx_ce_marker_tt_content.tx_xo_variant.1
+			}
+		}
+	}
+[END]
