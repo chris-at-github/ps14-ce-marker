@@ -1,23 +1,27 @@
 <div xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:xo="http://typo3.org/ns/Ps/Xo/ViewHelpers" data-namespace-typo3-fluid="true">
 	<f:section name="Main">
 		<div class="col-lg-6">
-			<ul class="marker-image--legend">
+			<ol class="marker--legend">
 				<f:for each="{records}" as="record" iteration="iterator">
-					<li class="marker-image--legend-item">
-						<div class="marker-image--legend-item-index">{iterator.cycle}</div>
-
-						<f:if condition="{record.data.title}">
-							<div class="marker-image--legend-item-title">
-								<f:render partial="Header/Header" arguments="{header: record.data.title, layout: record.data.titleType}" />
-							</div>
-						</f:if>
-
-						<f:if condition="{record.data.description}">
-							<f:format.html>{record.data.description}</f:format.html>
-						</f:if>
-					</li>
+					<f:render section="Item" arguments="{data: record.data, iterator: iterator}" />
 				</f:for>
-			</ul>
+			</ol>
 		</div>
+	</f:section>
+
+	<f:section name="Item">
+		<li class="marker--legend-item">
+			<div class="marker--legend-item-index">{iterator.cycle}</div>
+
+			<f:if condition="{data.title}">
+				<div class="marker--legend-item-title">
+					<f:render partial="Header/Header" arguments="{header: data.title, layout: data.titleType}" />
+				</div>
+			</f:if>
+
+			<f:if condition="{data.description}">
+				<f:format.html>{data.description}</f:format.html>
+			</f:if>
+		</li>
 	</f:section>
 </div>

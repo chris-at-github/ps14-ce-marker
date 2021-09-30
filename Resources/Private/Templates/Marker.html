@@ -3,19 +3,20 @@
 	<f:section name="Main">
 		<f:spaceless>
 			<f:if condition="{media.0} || {records}">
-				<div class="row marker-image">
-					<f:if condition="{media.0}">
-						<f:render partial="Marker/Media" section="Main" arguments="{
-							media: media.0,
-							settings: settings.modules.marker.media.aside
-						}" />
-					</f:if>
-
-					<f:if condition="{records}">
-						<f:render partial="Marker/Records" section="Main" arguments="{_all}" />
-					</f:if>
-				</div>
+				<f:render section="Variant-{data.tx_xo_variant}" arguments="{_all}" />
 			</f:if>
 		</f:spaceless>
+	</f:section>
+
+	<f:section name="Variant-0">
+		<div class="row marker">
+			<f:if condition="{media.0}">
+				<f:render partial="Marker/Media" section="Main" arguments="{media: media.0, settings: settings.modules.marker.media.aside}" />
+			</f:if>
+
+			<f:if condition="{records}">
+				<f:render partial="Marker/Records" section="Main" arguments="{_all}" />
+			</f:if>
+		</div>
 	</f:section>
 </html>
