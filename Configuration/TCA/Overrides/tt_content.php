@@ -27,6 +27,7 @@ $GLOBALS['TCA']['tt_content']['types']['ce_marker'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['types']['ce_marker']['columnsOverrides']['tx_xo_file'] = [
+	'l10n_mode' => 'exclude',
 	'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
 		'tx_xo_file',
 		[
