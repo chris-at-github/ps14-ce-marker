@@ -39,7 +39,7 @@ tt_content {
 
 			110 = Ps\Xo\DataProcessing\SettingsProcessor
 
-			120 = Ps14\CeAccordion\DataProcessing\ModuleProcessor
+			120 = Ps14\CeMarker\DataProcessing\ModuleProcessor
 			120 {
 				importCss {
 					10 = /assets/css/modules/marker.css

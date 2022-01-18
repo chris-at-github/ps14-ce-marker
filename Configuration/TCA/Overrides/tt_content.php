@@ -104,7 +104,7 @@ $GLOBALS['TCA']['tt_content']['types']['ce_marker']['columnsOverrides']['tx_xo_e
 		'record_type' => [
 			'config' => [
 				'items' => [
-					['LLL:EXT:ce_accordion/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.record_type.default', 'ce_marker_default'],
+					['LLL:EXT:ce_marker/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.record_type.default', 'ce_marker_default'],
 				],
 				'default' => 'ce_marker_default'
 			]

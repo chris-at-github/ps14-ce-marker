@@ -1,6 +1,6 @@
 <?php
 
-namespace Ps14\CeAccordion\DataProcessing;
+namespace Ps14\CeMarker\DataProcessing;
 
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2021-05-05T06:25:54Z" product-name="ce_accordion" target-language="de">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-05-05T06:25:54Z" product-name="ce_marker" target-language="de">
 		<header/>
 		<body>
 			<trans-unit id="tx_ce_marker.title">
 				<target>Marker</target>
 			</trans-unit>
-			<trans-unit id="tx_ce_accordion.description">
+			<trans-unit id="tx_ce_marker.description">
 				<target>Marker Modul</target>
 			</trans-unit>
 
